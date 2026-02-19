@@ -12,8 +12,299 @@
 }
 
 body {
-    font-family: "Bricolage Grotesque";
     background-color: #252525;
+    padding: 0 0 0 0;
+    margin-top: 0;
+    margin-left: 0;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    padding: 5px 20px;
+    align-items: center;
+    border-bottom:0.3px solid #bababa;
+    gap: 245px;
+    z-index: 1000;
+    background-color: #252525;
+    max-width: 100%;
+    width: 1280px;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: #bababa;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 16px;
+    font-weight:400;
+    gap: 100px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.sun {
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+.sign-in{
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #bababa;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 99px;
+    height: 46px;
+}
+
+.sign-up{
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #F76F53;
+    border-color: #F76F53;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+    width: 99px;
+    height: 46px;
+}
+#hero{
+    position: relative;
+    z-index: 1;
+    width: 1280px;
+    height: 634px;
+    padding: 0;
+    margin: 0 auto;
+}
+.border-image{
+    position: absolute;
+    top: 42px;
+    left: -27px;
+}
+.hero-left{
+    padding: 200px 55px;
+}
+.open-project{
+    align-items: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #bababa;
+    width: 226px;
+    height: 33px;
+    border-radius: 32px;
+    border: 1px solid #bababa;
+    background-color: transparent;
+    opacity: 52%;
+}
+.hero-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.get-text {
+    font-size: 40px;
+    color: white;
+    font-family: "Bricolage Grotesque";
+    margin: 0;
+    padding: 0;
+}
+.omahfe-text {
+    align-items: center;
+    display: flex;
+    font-family: "Bricolage Grotesque";
+    font-size: 128px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #EDEDED 0%, #878787 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 128px;
+}
+.fe{
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 128px;
+    -webkit-text-fill-color: #F76F53;
+    font-family: "Bricolage Grotesque";
+    font-size: 128px;
+    font-weight: 600;
+}
+.rndm-text {
+    color: var(--Basic-White, #EDEDED);
+    font-family: Junicode;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+.button{
+    display: flex;
+    padding-top: 40px;
+    gap: 30px;
+}
+.get-started{
+    display: inline-flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    border: 1px solid #F76F53;
+    background: #F76F53;
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+.more-analytics{
+    display: inline-flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    border: 1px solid var(--Cream, #D1CFC0);
+    background-color: transparent;
+    color: var(--Cream, #D1CFC0);
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+.hero-right{
+    padding: 0;
+    margin-top: -570px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.image-hero{
+    width: 392px;
+    height: 359px;
+    border-radius: 100px;
+    display: flex;
+    margin-left: 850px;
+    object-fit: cover;
+    flex-direction: row;
+}
+#about{
+    position: relative;
+    z-index: 1;
+    width: 1280px;
+    height: 634px;
+    padding: 0;
+    margin: 0 auto;
+}
+.about-border{
+    margin-top: -15px;
+    margin-left: 747px;
+    align-items: center;
+}
+.tentangkami{
+    font-family: "Bricolage Grotesque";
+    font-size: 48px;
+    margin-top: -270px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    align-items: center;
+    color: white;
+    z-index: 100;
+}
+.par {
+    display: flex;
+    font-family: "Plus Jakarta Sans";
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    color:white;
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.about-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-border2{
+    margin-top: -260px;
+    margin-left: -37px;
+}
+.year{
+    color: #f76f53; 
+    font-size: 35px; 
+    margin-bottom: 0; 
+    font-weight: 700;
+    gap: 40px;
+    display: flex;
+    font-family: "Plus Jakarta Sans";
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.year-text{
+    color: white;
+    margin-top: 0; 
+    padding-top: 0;
+    font-size: 16px; 
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    width: 100%;
+}
+.selengkapnya-btn{
+    background-color: #F76F53;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #F76F53;
+    margin-left: 545px;
+    width: 198px;
+    height: 46px;
+    display: inline-flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 5px;
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .t-tittle {
