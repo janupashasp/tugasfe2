@@ -1,0 +1,456 @@
+@font-face {
+    font-family: "Junicode";
+    src: url("../public/font/junicode.regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Junicode";
+    src: url("../public/font/junicode.italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    font-family: "Bricolage Grotesque";
+    background-color: #252525;
+}
+
+.t-tittle {
+    font-family: Bricolage Grotesque;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFF;
+
+
+}
+
+.testimonial-container {
+    width: 1280px;
+    margin: 0 auto;
+    height: 634px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    padding-bottom: 106px;
+}
+
+.t-nengah{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.t-arrow {
+    display: inline-flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--Primary, #F0861A);
+    background: var(--Orange, #F76F53);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.t-arrow img {
+    width: 20px;
+    height: 20px;
+}
+
+.t-box {
+    width: 860px;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.t-boxkiri {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #D1CFC0;
+}
+
+.t-user {
+    margin-top: 32px;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    border-radius: 80px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.t-text{
+    margin-left: 67px;
+    margin-right: 67px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 24px 0;
+
+}
+
+.tname {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: bottom;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.t-staff{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    border: 0px;
+    margin: 0px;
+    margin-bottom: 22px;
+}
+
+.t-rimage {
+    width: 50%;
+}
+
+.t-rimage img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* Contact US */
+/* contact */
+.contact-container {
+    border-top: #4F4F51 ;
+    background: #252525;
+    color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 80px;  
+}
+
+.contact-title {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 40px 80px;
+    margin: 0px;  
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #3B3B3B;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+}
+
+
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-btn {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #F76F53;
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-weight: 600;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+.send-icon {
+    width: 28px;
+}
+/* Footer */
+.contact-container {
+    border-top: #4F4F51 ;
+    background: #252525;
+    color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 40px 80px;  
+}
+
+.contact-title {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 40px 80px;
+    margin: 0px;  
+}
+
+.c-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.form-group label {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #EDEDED;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #3B3B3B;
+    border: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+    color: #EDEDED;
+}
+
+.form-group input::placeholder{
+    color: #EDEDED;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-btn {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #F76F53;
+    color: #EDEDED;
+    font-family: "Bricolage Grotesque";
+    font-size: 18px;
+    font-weight: 600;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+.send-icon {
+    width: 28px;
+}
+
+ /* footer */
+
+.footer-container{
+    height: 400px;
+    color: #EDEDED;
+    display: flex;
+    align-items: flex-start;
+    flex-direction:column;
+    gap: 20px;
+    padding: 40px 80px;
+
+}
+.footerup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.footerdown{
+    width: 100%;
+    padding-top: 15px;
+    color: #EDEDED;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-top: 1px solid #4F4F51;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.f-kiri {
+    width: 50%;
+    display: flex;
+    align-content: space-between ;
+    flex-direction: column;
+    gap: 50px;
+    align-content: space-between;
+    max-width: 500px;
+}
+.alamat {
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logoomahFE{
+    width: 174px;
+    height: 60px;
+    opacity: 1;
+    display:flex;
+    justify-items: left;
+
+ }
+
+.f-kiriatas{
+    opacity: 1;
+    letter-spacing: 0%;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    height: auto;
+    max-width: 420px;
+}
+
+
+.f-kiribawah {
+    margin-top: 20px;
+}
+
+
+
+.contact-with-us{
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.f-logo{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+
+.sosmed{
+    width: 44;
+    height: 44;
+    opacity: 1;
+}
+
+.f-kanan {
+    margin-left: auto;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: flex-end;
+    width: 40%;
+}
+.f-aboutus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.pageinspo {
+    color: #FFF;
+    font-family: "Bricolage Grotesque";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0%;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+}
+.f-support{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.pasub-btn{
+
+    background-color: transparent;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #EDEDED;
+    border-color: transparent;
+    gap: 0px;
+    text-align: left;
+
+}
