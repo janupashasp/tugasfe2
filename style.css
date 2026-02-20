@@ -1,3 +1,7 @@
+@import url('globals.css');
+@import url('styleguide.css');
+
+
 @font-face {
     font-family: "Junicode";
     src: url("../public/font/junicode.regular.ttf") format("truetype");
@@ -10,39 +14,51 @@
     font-weight: 400;
     font-style: italic;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #252525;
-    padding: 0 0 0 0;
-    margin: 0;
+    padding-top: 80px; 
 }
-.navbar{
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
     display: flex;
     position: fixed;
-    padding: 5px 20px;
+    top: 0;
+    left: 0;
+    width: 100%;            
+    padding: 16px 60px;
     align-items: center;
-    border-bottom:0.3px solid #bababa;
     justify-content: space-between;
+    border-bottom: 0.3px solid #bababa;
     z-index: 1000;
     background-color: #252525;
-    max-width: 1280px;
-    width: 100%;
 }
 
-.nav-left a{
-    text-decoration: none;
-    color: #bababa;
-}
-
-.nav-left{
+.nav-left {
     display: flex;
     align-items: center;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 16px;
-    font-weight:400;
+    font-weight: 400;
     gap: 100px;
 }
 
-.nav-right{
+.nav-left a {
+    text-decoration: none;
+    color: #bababa;
+}
+
+.nav-right {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -54,7 +70,8 @@ body {
     border-color: transparent;
     cursor: pointer;
 }
-.sign-in{
+
+.sign-in {
     font-family: "Bricolage Grotesque", sans-serif;
     color: #bababa;
     font-size: 18px;
@@ -65,76 +82,94 @@ body {
     cursor: pointer;
     width: 99px;
     height: 46px;
+    transition: all 0.2s ease;
 }
 
-.sign-up{
+.sign-in:hover {
+    background-color: #bababa;
+    color: #252525;
+}
+
+.sign-up {
     font-family: "Bricolage Grotesque", sans-serif;
     color: white;
     font-size: 18px;
     font-weight: 400;
     background-color: #F76F53;
-    border-color: #F76F53;
+    border: 1px solid #F76F53;
     border-radius: 10px;
-    border-width: 1px;
     cursor: pointer;
     width: 99px;
     height: 46px;
+    transition: all 0.2s ease;
 }
-#hero{
-    display: flex;              
-    justify-content: space-between; 
-    align-items: center;       
-    padding: 0;           
-    min-height: 80vh;   
-    width: 100%;
-    max-width: 1280px;
-    height: 634px;
-    margin: 0 auto;
+
+.sign-up:hover {
+    background-color: #e55f43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 111, 83, 0.4);
 }
-.border-image{
-    position: absolute;
-    top: 55px;
-    left: 0;
-}
-.hero-left{
-    top: 40px;
+
+
+
+#hero {
     position: relative;
-    padding: 0;
-    margin: 0 auto;
-}
-.open-project{
-    position: relative;
+    width: 100%;              
+    min-height: 634px;
+    display: flex;           
     align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.border-image {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    z-index: 0;
+}
+
+.hero-left {
+    position: relative;
+    z-index: 1;
+    padding: 100px 55px;        
+    max-width: 560px;
+}
+
+.open-project {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: "Bricolage Grotesque", sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #bababa;
-    width: 226px;
-    height: 33px;
     border-radius: 32px;
     border: 1px solid #bababa;
     background-color: transparent;
-    opacity: 52%;
+    opacity: 0.52;
+    padding: 5px 15px;
+    cursor: pointer;
 }
-.hero-text{
-    position: relative;
+
+.hero-text {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .get-text {
     position: relative;
     font-size: 40px;
     color: white;
     font-family: "Bricolage Grotesque";
-    margin: 0;
-    padding: 0;
+    font-weight: 600;
 }
+
 .omahfe-text {
-    position: relative;
-    align-items: center;
     display: flex;
+    align-items: center;
     font-family: "Bricolage Grotesque";
     font-size: 128px;
     font-weight: 600;
@@ -142,41 +177,34 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 0;
-    padding: 0;
-    height: 128px;
+    line-height: 1;
 }
-.fe{
-    position: relative;
-    align-items: center;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    height: 128px;
+
+.fe {
     -webkit-text-fill-color: #F76F53;
     font-family: "Bricolage Grotesque";
     font-size: 128px;
     font-weight: 600;
+    line-height: 1;
 }
+
 .rndm-text {
-    position: relative;
-    color: var(--Basic-White, #EDEDED);
+    color: #EDEDED;
     font-family: Junicode;
-    font-size: 32px;
-    font-style: normal;
+    margin: 10px 0 10px;
+    font-size: 28px;
+    width: 999px;
+    height: 40px;
     font-weight: 400;
-    line-height: normal;
-    margin: 0;
-    padding: 0;
 }
-.button{
-    position: relative;
+
+.button {
     display: flex;
     padding-top: 40px;
     gap: 30px;
 }
-.get-started{
-    position: relative;
+
+.get-started {
     display: inline-flex;
     padding: 12px 16px;
     align-items: center;
@@ -187,44 +215,60 @@ body {
     color: #FFF;
     font-family: "Bricolage Grotesque";
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
-.more-analytics{
-    position: relative;
+
+.get-started:hover {
+    background: #e55f43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 111, 83, 0.4);
+}
+
+.more-analytics {
     display: inline-flex;
     padding: 12px 16px;
     align-items: center;
     gap: 12px;
     border-radius: 10px;
-    border: 1px solid var(--Cream, #D1CFC0);
+    border: 1px solid #D1CFC0;
     background-color: transparent;
-    color: var(--Cream, #D1CFC0);
+    color: #D1CFC0;
     font-family: "Bricolage Grotesque";
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
-.hero-right{
-    position: relative;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+
+.more-analytics:hover {
+    background: #D1CFC0;
+    color: #252525;
+    transform: translateY(-2px);
 }
-.image-hero{
+
+.hero-right {
     position: relative;
+    z-index: 0;
+    flex-shrink: 0;           
+}
+
+.image-hero {
     width: 392px;
     height: 359px;
     border-radius: 100px;
+    object-fit: cover;  
+    background: var(--color-gray-light);
     display: flex;
-    object-fit: cover;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;    
+                           
 }
+
+
 #about{
     position: relative;
     z-index: 1;
@@ -337,6 +381,426 @@ body {
     font-weight: 600;
     line-height: normal;
 }
+
+
+/* Features */
+.features {
+    width: 100%;
+    padding: 80px 0;
+    background: var(--color-bg-primary);
+}
+
+.features-title {
+    font-family: 'Bricolage Grotesque';
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.features-title span {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.features-grid {
+    width: 100%;
+    max-width: 1178px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    position: relative;
+    background: #D9D9D94D;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 380px;
+    height: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all var(--transition-slow);
+}
+
+.feature-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(247, 111, 83, 0.3);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    z-index: 0;
+    transition: transform var(--transition-normal);
+}
+
+.feature-card:hover img {
+    transform: scale(1.05);
+}
+
+.feature-card p {
+    padding: 10px 15px;
+    color: var(--color-text-primary);
+    font-family: 'Bricolage Grotesque';
+    font-size: 32px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+.feature-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent 60%);
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.features-btn {
+    display: block;
+    margin: 35px auto 0 auto;
+    padding: 12px 26px;
+    font-family: 'Bricolage Grotesque';
+    font-size: 16px;
+    background: var(--color-accent);
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+}
+
+.features-btn:hover {
+    background: #e55f43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 111, 83, 0.4);
+}
+
+/* Portfolio */
+.portfolio {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg-primary);
+    overflow: hidden;
+}
+
+/* Judul */
+.judul-portofolio {
+    position: absolute;
+    top: 35px;
+    left: 41px;
+    font-family: 'Bricolage Grotesque', Helvetica;
+    font-size: 45px;
+    color: transparent;
+    line-height: normal;
+}
+
+.judul-biasa {
+    color: var(--color-text-secondary);
+    font-weight: 400;
+}
+
+.judul-aksen {
+    font-family: 'Junicode', Helvetica;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-accent);
+}
+
+/* Tombol */
+.tombol-portofolio {
+    position: absolute;
+    top: 121px;
+    left: 41px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.btn-portofolio {
+    all: unset;
+    box-sizing: border-box;
+    background-color: var(--color-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: 'Bricolage Grotesque', Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.btn-portofolio:hover {
+    background-color: #e55f43;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 111, 83, 0.4);
+}
+
+.btn-kontak {
+    all: unset;
+    box-sizing: border-box;
+    height: 46px;
+    background-color: var(--color-cream);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-family: 'Bricolage Grotesque', Helvetica;
+    font-weight: 600;
+    color: #808080;
+    font-size: 18px;
+}
+
+.btn-kontak:hover {
+    background-color: #c1bfb0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(209, 207, 192, 0.3);
+}
+
+.ikon-telepon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ikon-telepon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Grid kartu */
+.grid-portofolio {
+    position: absolute;
+    top: 214px;
+    left: 41px;
+    width: 94.5%;
+    min-width: 1200px;
+    height: auto;
+    max-height: 614px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+    z-index: 10;
+    scroll-behavior: smooth;
+}
+
+
+.baris-atas,
+.baris-bawah {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+/* Kartu portofolio */
+.kartu-portofolio {
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform var(--transition-normal);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kartu-kecil {
+    width: 350px;
+    height: 264px;
+}
+
+.kartu-besar {
+    width: 487px;
+    height: 320px;
+}
+
+.kartu-portofolio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    transition: transform var(--transition-normal);
+}
+
+.kartu-portofolio:hover {
+    transform: translateY(-5px);
+}
+
+.kartu-portofolio:active {
+    transform: scale(0.98);
+}
+
+.kartu-portofolio:hover img {
+    transform: scale(1.05);
+}
+
+.overlay-gradien {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(71, 59, 71, 0) 39%,
+        rgba(247, 111, 83, 0.2) 60%,
+        rgba(247, 111, 83, 0.5) 80%,
+        rgba(247, 111, 83, 1) 100%
+    );
+}
+
+.judul-kartu {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    width: calc(100% - 36px);
+    font-family: 'Bricolage Grotesque', Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: normal;
+    z-index: 3;
+    white-space: normal;
+    overflow: visible;
+}
+
+.judul-tebal {
+    font-weight: 700;
+}
+
+
+/* Nyobak Responsif hehe*/
+@media (max-width: 1024px) {
+    .portfolio {
+        height: auto;
+        overflow: visible;
+        padding: 30px 0 60px 0;
+    }
+
+    .judul-portofolio {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        padding: 0 0 20px 41px;
+    }
+
+    .tombol-portofolio {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 0 0 20px 41px;
+        flex-wrap: wrap;
+    }
+
+    .grid-portofolio {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        min-width: unset;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 41px 20px 41px;
+    }
+
+    .baris-atas,
+    .baris-bawah {
+        flex-wrap: nowrap;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .nav-links {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .features-title {
+        font-size: 32px;
+    }
+
+    .judul-portofolio {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .t-tittle {
     font-family: Bricolage Grotesque;
