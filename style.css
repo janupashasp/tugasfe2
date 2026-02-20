@@ -160,6 +160,7 @@ body {
 }
 
 .get-text {
+    position: relative;
     font-size: 40px;
     color: white;
     font-family: "Bricolage Grotesque";
